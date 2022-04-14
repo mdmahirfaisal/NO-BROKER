@@ -1,12 +1,10 @@
 import React from 'react';
-import { Swiper, SwiperSlide } from "swiper/react";
+import TestimonialInfo from '../TestimonialInfo/TestimonialInfo';
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Navigation, } from "swiper";
-
-import TestimonialInfo from '../TestimonialInfo/TestimonialInfo';
-
+import { Swiper, SwiperSlide } from "swiper/react";
 
 
 const testimonialData = [
@@ -84,11 +82,10 @@ const OurCustomers = () => {
             <h2 className='text-3xl text-center text-gray-200 py-7 '>Our Customers Loves us</h2>
             {/* video  */}
             <div>
-                <iframe className='mx-auto' width={560} height={320} src="https://www.youtube.com/embed/0ChlgxhXVws" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <iframe className='mx-auto px-2 min-h-[250px] w-[100%] md:w-[560px] md:h-[320px]' src="https://www.youtube.com/embed/0ChlgxhXVws" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
 
             {/* testimonials  */}
-            {/* className='drop-shadow-lg bg-white min-h-[200px] ' */}
             <Swiper
                 loop={true}
                 grabCursor={true}

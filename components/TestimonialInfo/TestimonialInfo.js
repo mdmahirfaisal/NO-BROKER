@@ -5,7 +5,7 @@ const TestimonialInfo = ({ info }) => {
 
     return (
         <div className="">
-            <div className='drop-shadow-lg p-2'>
+            <div className='drop-shadow-lg px-4 py-3'>
                 <div className="flex items-center ">
                     <img className="w-10 h-10 rounded-full" src="https://tailus.io/sources/blocks/grid-cards/preview/images/avatars/third_user.webp" alt="user avatar" />
                     <div className='ml-3'>

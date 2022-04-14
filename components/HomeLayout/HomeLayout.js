@@ -4,6 +4,9 @@ import WhyUseNB from "../WhyUseNB/WhyUseNB";
 import NbBusiness from '../NbBusiness/NbBusiness';
 import OurCustomers from '../OurCustomers/OurCustomers';
 import FindHome from "../FindHome/FindHome";
+import MultipleLinks from "../MultipleLinks/MultipleLinks";
+import NoBrokerServices from "../NoBrokerServices/NoBrokerServices";
+import Footer from "../Footer/Footer";
 
 
 export default function Layout({ children }) {
@@ -19,6 +22,9 @@ export default function Layout({ children }) {
                 <NbBusiness />
                 <OurCustomers />
                 <FindHome />
+                <MultipleLinks />
+                <NoBrokerServices />
+                <Footer />
             </section>
 
         </>

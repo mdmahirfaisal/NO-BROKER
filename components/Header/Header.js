@@ -47,7 +47,7 @@ const Header = () => {
 
             {/* State change options */}
 
-            <div className="border w-full md:w-[850px] mx-auto">
+            <div className="border w-full md:max-w-[850px] mx-auto">
                 <div className='flex flex-col md:flex-row' >
                     <div className='md:w-[130px] mb-3 md:mb-0'>
                         <Select fullWidth

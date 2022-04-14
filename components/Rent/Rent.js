@@ -11,7 +11,7 @@ const Rent = () => {
 
     return (
         <>
-            <div className="border w-full md:w-[850px] mx-auto">
+            <div className="border w-full md:max-w-[850px] mx-auto">
                 <div className='p-2 flex md:flex-row flex-col gap-2'>
                     <p className="py-0 text-[13px] text-gray-500" >
                         <Radio id='builder' /><label className=' cursor-pointer' htmlFor='builder'>Full House</label>

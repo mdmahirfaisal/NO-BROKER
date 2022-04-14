@@ -8,7 +8,7 @@ const Buy = () => {
     const [propertyStatus, setPropertyStatus] = useState([])
     return (
         <>
-            <div className="border w-full md:w-[850px] mx-auto">
+            <div className="border w-full md:max-w-[850px] mx-auto">
                 <div className=' mr-2 md:mr-0 py-2 flex'>
                     <div className="w-full md:w-[140px]">
                         <Select fullWidth

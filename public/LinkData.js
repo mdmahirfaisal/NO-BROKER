@@ -1,0 +1,23 @@
+
+export const LinkData = [
+    { name: "Flats for Sale in Koramangala" },
+    { name: "Flats for Sale in Koramangala" },
+    { name: "Flats for Sale in Koramangala" },
+    { name: "Flats for Sale in Koramangala" },
+    { name: "Flats for Sale in Koramangala" },
+    { name: "Flats for Sale in Koramangala" },
+    { name: "Flats for Sale in Koramangala" },
+    { name: "Flats for Sale in Koramangala" },
+    { name: "Flats for Sale in Koramangala" },
+    { name: "Flats for Sale in Koramangala" },
+    { name: "Flats for Sale in Koramangala" },
+    { name: "Flats for Sale in Koramangala" },
+    { name: "Flats for Sale in Koramangala" },
+    { name: "Flats for Sale in Koramangala" },
+    { name: "Flats for Sale in Koramangala" },
+    { name: "Flats for Sale in Koramangala" },
+    { name: "Flats for Sale in Koramangala" },
+    { name: "Flats for Sale in Koramangala" },
+    { name: "Flats for Sale in Koramangala" },
+    { name: "Flats for Sale in Koramangala" },
+]

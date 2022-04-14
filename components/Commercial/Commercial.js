@@ -9,7 +9,7 @@ const Commercial = () => {
     const [apartmentType, setApartmentType] = useState([])
     return (
         <>
-            <div className="border w-full md:w-[850px] mx-auto">
+            <div className="border w-full md:max-w-[850px] mx-auto">
                 <div className='p-2 flex md:flex-row flex-col'>
                     <p className="py-0 text-[13px] text-gray-500" >
                         <Radio id='rent' defaultChecked /><label className=' cursor-pointer' htmlFor='rent'>Rent</label>
