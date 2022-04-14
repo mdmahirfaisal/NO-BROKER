@@ -49,7 +49,7 @@ const Header = () => {
 
             <div className="border w-full md:max-w-[850px] mx-auto">
                 <div className='flex flex-col md:flex-row' >
-                    <div className='md:w-[130px] mb-3 md:mb-0'>
+                    <div className='w-full md:w-[130px] mb-3 md:mb-0'>
                         <Select fullWidth
                             value={state}
                             sx={{ border: '1px solid #efefef', paddingY: 0, outline: 'none' }}

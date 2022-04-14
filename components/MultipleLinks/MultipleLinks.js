@@ -41,11 +41,10 @@ const items = [
 
 const MultipleLinks = () => {
     const [panel, setPanel] = useState("flatForSale");
-    console.log(panel)
     return (
         <>
             <div className='bg-[#f8f8f8] mt-10 border-t-2 '>
-                <div className='grid grid-cols-7'>
+                <div className='flex justify-evenly sm:flex-none flex-wrap md:grid md:grid-cols-7 gap-3 md:gap-0'>
                     {items.map(item => <LinkItem
                         key={item.title}
                         item={item}
@@ -55,7 +54,7 @@ const MultipleLinks = () => {
                 </div>
             </div>
             {/* Multiple Links  */}
-            <div className='mt-5 w-[98%] md:w-[96%] mx-auto'>
+            <div className='mt-5 w-[96%] md:w-[94%] mx-auto'>
                 {
                     panel === "flatForSale" ? <FlatsForSale />
                         : panel === "flatsForRent" ? <FlatsForRent />

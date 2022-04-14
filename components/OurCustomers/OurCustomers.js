@@ -3,7 +3,7 @@ import TestimonialInfo from '../TestimonialInfo/TestimonialInfo';
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Navigation, } from "swiper";
+import { Navigation, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 
@@ -82,7 +82,7 @@ const OurCustomers = () => {
             <h2 className='text-3xl text-center text-gray-200 py-7 '>Our Customers Loves us</h2>
             {/* video  */}
             <div>
-                <iframe className='mx-auto px-2 min-h-[250px] w-[100%] md:w-[560px] md:h-[320px]' src="https://www.youtube.com/embed/0ChlgxhXVws" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <iframe className='mx-auto px-2 min-h-[250px] w-[98%] mb-10 md:w-[560px] md:h-[320px]' src="https://www.youtube.com/embed/0ChlgxhXVws" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
 
             {/* testimonials  */}
@@ -93,6 +93,10 @@ const OurCustomers = () => {
                 spaceBetween={10}
                 slidesPerGroup={1}
                 loopFillGroupWithBlank={true}
+                autoplay={{
+                    delay: 5000,
+                    disableOnInteraction: false,
+                }}
                 breakpoints={{
                     640: {
                         slidesPerView: 1,
@@ -114,7 +118,7 @@ const OurCustomers = () => {
                     clickable: true,
                 }}
 
-                modules={[Navigation]}
+                modules={[Autoplay, Navigation]}
                 className="mySwiper swiper-container"
             >
                 {testimonialData.map((info) => <SwiperSlide

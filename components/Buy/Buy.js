@@ -56,8 +56,10 @@ const Buy = () => {
 
             <h6 className='flex mx-auto justify-center text-white w-56 text-md px-5 mt-5 py-3 bg-[#009587] text-md font-medium hover:bg-green-700'><span>Post Free property ad</span></h6>
 
-            <div className='bg-[#384d6c] flex justify-center items-center gap-2 py-3 text-gray-200 mt-6'>
-                <CleanHandsOutlinedIcon fontSize='large' /> <p className='text-[13px]'>Do you know how much loan you can get? Get maximum with NoBroker</p> <p className='bg-white rounded-lg px-3 py-1 text-black text-[13px]'>Check Eligibility</p>
+            <div className="bg-[#384d6c]">
+                <div className=' flex justify-center items-center gap-2 py-3 text-gray-200 mt-6 w-[96%] mx-auto'>
+                    <CleanHandsOutlinedIcon fontSize='large' /> <p className='text-[13px]'>Do you know how much loan you can get? Get maximum with NoBroker</p> <p className='bg-white rounded-lg px-3 py-1 text-black text-[13px]'>Check Eligibility</p>
+                </div>
             </div>
 
             <div className='grid grid-cols-3 lg:grid-cols-6 lg:gap-5'>

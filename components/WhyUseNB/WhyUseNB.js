@@ -10,7 +10,7 @@ const WhyUseNB = () => {
             <div className='flex mt-14 '>
 
                 <p className='grow border-b-2 relative'><CircleOutlinedIcon sx={{ position: 'absolute', top: 8, right: 0, backgroundColor: 'white', color: 'red', fontSize: '25px' }} /></p>
-                <h2 className='text-xl lg:text-3xl text-gray-500 text-center flex-none mb-[-15px] px-5'>Why Use NoBroker</h2>
+                <h2 className='text-xl lg:text-3xl text-gray-500 text-center flex-none mb-[-7px] md:mb-[-15px] px-5'>Why Use NoBroker</h2>
 
                 <p className='grow border-b-2 relative'><CircleOutlinedIcon sx={{ position: 'absolute', top: 8, left: 0, backgroundColor: 'white', color: 'red', fontSize: '25px' }} /></p>
             </div>

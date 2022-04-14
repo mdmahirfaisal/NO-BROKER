@@ -21,21 +21,19 @@ body {
 
 .swiper-container {
   background-color: #334a5c;
-  width: 96%;
-  margin: 0 auto;
+  width: 94%;
 }
 
 .swiper-slide {
   background-color: white;
-  margin-top: 50px;
-  border-radius: 10px;
+  border-radius: 5px;
   min-height: 220px;
 }
 
 @media only screen and (max-width: 600px) {
   .swiper-container {
     background-color: #334a5c;
-    width: 98%;
+    width: 96%;
     margin: 0 auto;
   }
 }

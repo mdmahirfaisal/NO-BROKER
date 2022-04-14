@@ -10,13 +10,14 @@ const NbBusiness = () => {
         <>
             <div className='bg-[#f4f4f4] pb-8'>
                 <div className='flex pt-10 mt-10 '>
-                    <p className='grow border-b-2 relative'><CircleOutlinedIcon sx={{ position: 'absolute', top: 8, right: 0, color: 'red', fontSize: '25px' }} /></p>
-                    <h2 className='text-xl lg:text-3xl text-gray-500 text-center flex-wrap mb-[-15px] flex-wrap px-3'>NoBroker Business Assist Plan For Builders</h2>
+                    <p className='grow hidden sm:block border-b-2 relative'><CircleOutlinedIcon sx={{ position: 'absolute', top: 8, right: 0, color: 'red', fontSize: '25px' }} /></p>
 
-                    <p className='grow border-b-2 relative'><CircleOutlinedIcon sx={{ position: 'absolute', top: 8, left: 0, color: 'red', fontSize: '25px' }} /></p>
+                    <h2 className='mx-auto text-xl md:text-2xl lg:text-3xl text-gray-500 text-center mb-[-7px] md:mb-[-15px] px-3'>NoBroker Business Assist Plan For Builders</h2>
+
+                    <p className='grow hidden sm:block border-b-2 relative'><CircleOutlinedIcon sx={{ position: 'absolute', top: 8, left: 0, color: 'red', fontSize: '25px' }} /></p>
                 </div>
 
-                <div className='flex items-center justify-center flex-wrap gap-12'>
+                <div className='flex items-center justify-center flex-wrap w-[96%] md:w-[100%]  gap-12'>
                     <div className='mt-10'>
                         <Image width={300} height={220} src={image} alt="Build image" />
                     </div>
@@ -31,10 +32,11 @@ const NbBusiness = () => {
             {/* We make a difference  */}
 
             <div className='flex mt-10 '>
-                <p className='grow border-b-2 relative'><CircleOutlinedIcon sx={{ position: 'absolute', top: 8, right: 0, color: 'red', fontSize: '25px', backgroundColor: 'white' }} /></p>
-                <h2 className='text-xl lg:text-3xl text-gray-500 text-center flex-none mb-[-15px] px-1'>We Make A Difference</h2>
+                <p className='grow hidden sm:block border-b-2 relative'><CircleOutlinedIcon sx={{ position: 'absolute', top: 8, right: 0, color: 'red', fontSize: '25px', backgroundColor: 'white' }} /></p>
 
-                <p className='grow border-b-2 relative'><CircleOutlinedIcon sx={{ position: 'absolute', top: 8, left: 0, color: 'red', fontSize: '25px', backgroundColor: 'white' }} /></p>
+                <h2 className='text-xl lg:text-3xl text-gray-500 flex-none mx-auto mb-[-7px] md:mb-[-15px] px-1'>We Make A Difference</h2>
+
+                <p className='grow hidden sm:block border-b-2 relative'><CircleOutlinedIcon sx={{ position: 'absolute', top: 8, left: 0, color: 'red', fontSize: '25px', backgroundColor: 'white' }} /></p>
             </div>
 
 
