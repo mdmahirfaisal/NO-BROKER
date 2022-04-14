@@ -9,10 +9,49 @@ import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import PaymentIcon from '@mui/icons-material/Payment';
 import useMediaQuery from '../Shared/useMediaQuery/useMediaQuery';
 import { useRouter } from 'next/router';
+import SwipeableDrawer from '@mui/material/SwipeableDrawer';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import SideBarContent from './SideBarContent';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import CottageIcon from '@mui/icons-material/Cottage';
+import AllInboxIcon from '@mui/icons-material/AllInbox';
+
 
 const NavigationBar = () => {
     const isMobile = useMediaQuery('(max-width: 768px)');
     const router = useRouter();
+
+    /// Side Bar 
+    const [state, setState] = React.useState({ left: false });
+
+    const toggleDrawer = (anchor, open) => (event) => {
+        if (
+            event &&
+            event.type === 'keydown' &&
+            (event.key === 'Tab' || event.key === 'Shift')
+        ) {
+            return;
+        }
+        setState({ ...state, [anchor]: open });
+    };
+
+    const list = (anchor) => (
+        < div className="max-w-[300px]">
+            <div className='flex items-center bg-[#fd3752]'>
+                <h5 className='text-white'><AccountCircleIcon sx={{ fontSize: '50px' }} /></h5>
+                <h5 className='text-xl text-white ml-3 '>Login</h5>
+                <h5 className='text-2xl text-white ml-1'>/</h5>
+                <h5 className='text-xl text-white ml-1'> Sign Up</h5>
+            </div>
+            <List onClick={toggleDrawer(anchor, false)} onKeyDown={toggleDrawer(anchor, false)} sx={{}}>
+                <ListItem button ><CottageIcon sx={{ mr: 2 }} />  Home</ListItem>
+                <ListItem button ><AllInboxIcon sx={{ mr: 2 }} /> Post  Free Property ads</ListItem>
+            </List>
+            <SideBarContent />
+        </div>
+    );
+
 
     // logo
     const logo = (
@@ -21,31 +60,33 @@ const NavigationBar = () => {
         </div>
     )
 
-    // menu icon
-    const menuIcon = (
-        <IconButton
-            size="large"
-            edge="start"
-            aria-label="menu"
-            sx={{ color: 'black' }} >
-            <MenuIcon fontSize='large' />
-        </IconButton>
-    )
-
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="fixed" sx={{ backgroundColor: 'white' }}>
                 <div className={!isMobile ? "flex items-center justify-between mx-auto" : "mx-auto"} style={{ width: '98%' }}>
                     {isMobile && <Toolbar>
-                        {menuIcon}
+                        {['left'].map((anchor) => (
+                            <React.Fragment key={anchor}>
+                                <IconButton onClick={toggleDrawer(anchor, true)} size="large" edge="start" aria-label="menu" sx={{ color: 'black' }} >
+                                    <MenuIcon fontSize='large' />
+                                </IconButton>
+                                <SwipeableDrawer
+                                    anchor={anchor}
+                                    open={state[anchor]}
+                                    onClose={toggleDrawer(anchor, false)}
+                                    onOpen={toggleDrawer(anchor, true)}
+                                >
+                                    {list(anchor)}
+                                </SwipeableDrawer>
+                            </React.Fragment>
+                        ))}
                         {logo}
                     </Toolbar>}
 
                     {!isMobile && <>
                         <div className='w-full flex items-center justify-between py-2'>
-                            <div>
-                                {logo}
-                            </div>
+
+                            {logo}
 
                             <div className='flex justify-evenly items-center'>
 
@@ -63,7 +104,6 @@ const NavigationBar = () => {
 
                                 <div className='flex items-center'>
                                     <IconButton
-                                        size="large"
                                         edge="start"
                                         aria-label="menu"
                                         sx={{ color: 'black' }}>
