@@ -11,7 +11,7 @@ const NbBusiness = () => {
             <div className='bg-[#f4f4f4] pb-8'>
                 <div className='flex pt-10 mt-10 '>
                     <p className='grow border-b-2 relative'><CircleOutlinedIcon sx={{ position: 'absolute', top: 8, right: 0, color: 'red', fontSize: '25px' }} /></p>
-                    <h2 className='text-xl lg:text-3xl text-gray-500 text-center flex-none mb-[-15px] flex-wrap px-3'>NoBroker Business Assist Plan For Builders</h2>
+                    <h2 className='text-xl lg:text-3xl text-gray-500 text-center flex-wrap mb-[-15px] flex-wrap px-3'>NoBroker Business Assist Plan For Builders</h2>
 
                     <p className='grow border-b-2 relative'><CircleOutlinedIcon sx={{ position: 'absolute', top: 8, left: 0, color: 'red', fontSize: '25px' }} /></p>
                 </div>

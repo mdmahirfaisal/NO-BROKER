@@ -22,8 +22,8 @@ const Footer = () => {
 
             <p className='border-t-2 border-gray-200 w-[80%] md:w-[50%] mx-auto py-3 mb-3' />
             <div className='grid grid-cols-1 sm:grid-cols-2 max-w-[500px] gap-3 sm:gap-10 mx-auto'>
-                <img className='w-[130px] ml-auto' src={googlePlayImg} alt="GooglePlay" />
-                <img className='w-[130px] mr-auto' src={appleStoreImg} alt="AppleStore" />
+                <img className='w-[130px] mx-auto md:ml-auto' src={googlePlayImg} alt="GooglePlay" />
+                <img className='w-[130px] mx-auto md:mr-auto' src={appleStoreImg} alt="AppleStore" />
             </div>
 
 
