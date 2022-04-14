@@ -27,8 +27,7 @@ const NavigationBar = () => {
             size="large"
             edge="start"
             aria-label="menu"
-            sx={{ color: 'black' }}
-        >
+            sx={{ color: 'black' }} >
             <MenuIcon fontSize='large' />
         </IconButton>
     )
@@ -40,9 +39,7 @@ const NavigationBar = () => {
                     {isMobile && <Toolbar>
                         {menuIcon}
                         {logo}
-                    </Toolbar>
-
-                    }
+                    </Toolbar>}
 
                     {!isMobile && <>
                         <div className='w-full flex items-center justify-between py-2'>
