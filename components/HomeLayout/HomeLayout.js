@@ -3,6 +3,7 @@ import NavigationBar from "../NavigationBar/NavigationBar";
 import WhyUseNB from "../WhyUseNB/WhyUseNB";
 import NbBusiness from '../NbBusiness/NbBusiness';
 import OurCustomers from '../OurCustomers/OurCustomers';
+import FindHome from "../FindHome/FindHome";
 
 
 export default function Layout({ children }) {
@@ -17,6 +18,7 @@ export default function Layout({ children }) {
                 <WhyUseNB />
                 <NbBusiness />
                 <OurCustomers />
+                <FindHome />
             </section>
 
         </>

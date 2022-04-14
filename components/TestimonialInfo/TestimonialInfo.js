@@ -4,22 +4,22 @@ import React from 'react';
 const TestimonialInfo = ({ info }) => {
 
     return (
-        <Paper>
-            <div className="p-6 border border-gray-100 rounded-xl bg-gray-50 sm:flex sm:space-x-8 sm:p-8">
-                <div className="flex">
-                    <img className="w-20 h-20 mx-auto rounded-full" src="https://tailus.io/sources/blocks/grid-cards/preview/images/avatars/third_user.webp" alt="user avatar" height="220" width="220" loading="lazy" />
-                    <div>
-                        <h6 className="text-lg font-semibold leading-none">{info.name} </h6>
-                        <h4 className='mb-0'><Rating name="half-rating-read" defaultValue={info.rating} precision={0.5} readOnly /></h4>
+        <div className="">
+            <div className='drop-shadow-lg p-2'>
+                <div className="flex items-center ">
+                    <img className="w-10 h-10 rounded-full" src="https://tailus.io/sources/blocks/grid-cards/preview/images/avatars/third_user.webp" alt="user avatar" />
+                    <div className='ml-3'>
+                        <h6 className="text-sm font-semibold ">{info.name} </h6>
+                        <h4 className='mb-0 text-sm text-green-600'><Rating sx={{ fontSize: '17px', color: '#008387' }} name="half-rating-read" defaultValue={info.rating} precision={0.5} readOnly /></h4>
                     </div>
                 </div>
 
-                <div className=" mt-2text-center text-left">
-                    <h2>{info.headline}</h2>
-                    <p className="text-gray-600"> <span className="font-serif"></span> {info.description} <span className="font-serif"></span></p>
+                <div className="mt-3 md:mt-5">
+                    <h2 className='text-[15px] font-bold'>{info.headLine}</h2>
+                    <p className="text-gray-600 text-[14px]"> <span className="font-serif"></span> {info.description} <span className="font-serif"></span></p>
                 </div>
             </div>
-        </Paper>
+        </div>
     );
 };
 
